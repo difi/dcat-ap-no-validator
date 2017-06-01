@@ -74,67 +74,74 @@ class Fullscreen extends React.Component {
             let text = reader.result;
 
             let background = function () {
-                if (file.name.indexOf(".json") > 0 || file.name.indexOf(".jsonld") > 0) {
-                    console.log("JSONLD")
-                } else {
-                    //assume turtle
 
-                    let simpleFetch = function(url){
-                        return fetch("dcat-ap-no-validator/vocabularies/"+url)
-                            .then(function (response) {
-                                return response.json()
-                            })
-                            .then(jsonld => {
-                                return JSONLD.promises.flatten(jsonld).then(JSONLD.promises.expand)
-                            })
-                    };
+                let basePath = window.location.host.indexOf("localhost") < 0 ? "dcat-ap-no-validator/" : ""
 
-                    let turtleFiles = [
-                        simpleFetch("ADMS_SKOS_v1.00.jsonld"),
-                        simpleFetch("ADMS_SW_v1-00_Taxonomies.jsonld"),
-                        simpleFetch("coporateboadies-skos.jsonld"),
-                        simpleFetch("difi-los.jsonld"),
-                        simpleFetch("freq.jsonld"),
-                        simpleFetch("languages-skos.jsonld"),
-                        simpleFetch("cldterms.jsonld"),
-                    ]
+                let simpleFetch = function(url){
+                    return fetch(basePath+"vocabularies/"+url)
+                        .then(function (response) {
+                            return response.json()
+                        })
+                        .then(jsonld => {
+                            return JSONLD.promises.flatten(jsonld).then(JSONLD.promises.expand)
+                        })
+                };
 
-                    Promise.all(turtleFiles).then(values => {
+                let turtleFiles = [
+                    simpleFetch("ADMS_SKOS_v1.00.jsonld"),
+                    simpleFetch("ADMS_SW_v1-00_Taxonomies.jsonld"),
+                    simpleFetch("coporateboadies-skos.jsonld"),
+                    simpleFetch("difi-los.jsonld"),
+                    simpleFetch("freq.jsonld"),
+                    simpleFetch("languages-skos.jsonld"),
+                    simpleFetch("cldterms.jsonld"),
+                ]
 
-                        values.push("");
+                Promise.all(turtleFiles).then(values => {
 
-                        RdfToJsonLD
-                            .rdfToJsonld(text)
-                            .then(jsonld => {
+                    values.push("");
 
-                                values.forEach(value => jsonld = jsonld.concat(value))
+                    let dcatDataPromise;
 
-                                return jsonld
+                    if (file.name.indexOf(".json") > 0 || file.name.indexOf(".jsonld") > 0) {
+                        dcatDataPromise = JSONLD.promises.flatten(JSON.parse(text)).then(JSONLD.promises.expand)
+                    } else {
+                        dcatDataPromise = RdfToJsonLD.rdfToJsonld(text)
+                    }
 
-                            })
-                            .then(jsonld => {
-                               return JSONLD.promises.flatten(jsonld).then(JSONLD.promises.expand)
-                            })
-                            .then(jsonld => {
+                    dcatDataPromise
+                        .then(jsonld => {
 
-                                this.state.shacl.validate(jsonld, error => {
-                                    let validationErrors = this.state.validationErrors;
-                                    validationErrors.push(error);
-                                    this.setState({validationErrors})
-                                    this.setState({loading: false})
-                                });
+                            values.forEach(value => jsonld = jsonld.concat(value))
 
+                            return jsonld
+
+                        })
+                        .then(jsonld => {
+                            return JSONLD.promises.flatten(jsonld).then(JSONLD.promises.expand)
+                        })
+                        .then(jsonld => {
+
+                            this.state.shacl.validate(jsonld, error => {
+                                let validationErrors = this.state.validationErrors;
+                                validationErrors.push(error);
+                                this.setState({validationErrors})
                                 this.setState({loading: false})
+                            });
 
-                            })
+                            this.setState({loading: false})
 
-                            .catch(error => {
-                                console.error(error)
-                                this.setState({loading: false})
-                                this.setState({syntaxError: ":("})
-                            })
-                    })
-                }
+                        })
+
+                        .catch(error => {
+                            console.error(error)
+                            this.setState({loading: false})
+                            this.setState({syntaxError: ":("})
+                        })
+                })
+
+
+
             }
 
             background = background.bind(this);
@@ -245,7 +252,7 @@ class Fullscreen extends React.Component {
                         { dropzoneActive && <div style={overlayStyle}>Slipp</div> }
                         <div style={{height: 240, width: "100%"}}>
 
-                            <h3 style={{textAlign: "center", paddingTop: 90}}>Slipp en DCAT fil her</h3>
+                            <h3 style={{textAlign: "center", paddingTop: 90}}>Slipp en DCAT fil her (turtle eller json-ld)</h3>
                             {forMangeFiler && <h4 style={{textAlign: "center"}}>For mange filer!</h4>}
                             {!loading && gyldig && <h4 style={{textAlign: "center"}} className="green"><span className="lighter-black">"{this.state.files[0].name}"</span> er gyldig <span >✓</span></h4>}
                             {!loading && ikkeGyldig && <h4 style={{textAlign: "center"}} className="red"><span className="lighter-black">"{this.state.files[0].name}"</span> er ikke gyldig <span >✗</span></h4>}
