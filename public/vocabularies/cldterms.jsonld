@@ -1,0 +1,257 @@
+{
+  "@graph" : [ {
+    "@id" : "_:bdb497ac3-f7b7-44c8-908a-e599bad103750",
+    "label" : "Dublin Core Collection Description Working Group"
+  }, {
+    "@id" : "http://purl.org/cld/terms/",
+    "creator" : "_:bdb497ac3-f7b7-44c8-908a-e599bad103750",
+    "modified" : "2013-06-26",
+    "title" : {
+      "@language" : "en",
+      "@value" : "The Collection Description Terms"
+    },
+    "changeNote" : {
+      "@language" : "en",
+      "@value" : "2013-08-20: added missing VES, CDType."
+    }
+  }, {
+    "@id" : "cld:AccrualMethod",
+    "@type" : [ "skos:ConceptScheme", "dcam:VocabularyEncodingScheme" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A set of methods by which items are added to a collection."
+    },
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Collection Description Accrual Method Vocabulary"
+    },
+    "seeAlso" : [ "http://dublincore.org/groups/collections/accrual-method/", "http://purl.org/cld/accmeth/" ]
+  }, {
+    "@id" : "cld:AccrualPolicy",
+    "@type" : [ "skos:ConceptScheme", "dcam:VocabularyEncodingScheme" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A set of policies governing the addition of items are added to a collection."
+    },
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Collection Description Accrual Policy Vocabulary"
+    },
+    "seeAlso" : [ "http://dublincore.org/groups/collections/accrual-policy/", "http://purl.org/cld/accpol/" ]
+  }, {
+    "@id" : "cld:CDType",
+    "@type" : [ "skos:ConceptScheme", "dcam:VocabularyEncodingScheme" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A set of types of collection description."
+    },
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Collection Description Type Vocabulary"
+    },
+    "seeAlso" : [ "http://dublincore.org/groups/collections/colldesc-type/", "http://purl.org/cld/cdtype/" ]
+  }, {
+    "@id" : "cld:Frequency",
+    "@type" : [ "skos:ConceptScheme", "dcam:VocabularyEncodingScheme" ],
+    "description" : {
+      "@language" : "en",
+      "@value" : "The Collection Description Frequency Vocabulary is based on the set of codes used for publication frequency in the MARC 21 Concise Format for Holdings Data."
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A set of frequencies with which a repeatable event occurs.."
+    },
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Collection Description Frequency Vocabulary"
+    },
+    "seeAlso" : [ "http://www.loc.gov/marc/holdings/echdcapt.html", "http://dublincore.org/groups/collections/frequency/", "http://purl.org/cld/freq/" ]
+  }, {
+    "@id" : "cld:RKMS-ISO8601",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Instances of this datatype are dates or periods of time represented as literals according to the rules specified in Recordkeeping Metadata Schema Extension to ISO8601."
+    },
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Recordkeeping Metadata Schema Extension to ISO8601"
+    },
+    "seeAlso" : "http://www.sims.monash.edu.au/research/rcrg/research/spirt/deliver/schemes.html#rkmsextension"
+  }, {
+    "@id" : "cld:associatedCollection",
+    "@type" : "rdf:Property",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A second collection that is associated with the current collection."
+    },
+    "domain" : "dcmitype:Collection",
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Associated Collection"
+    },
+    "range" : "dcmitype:Collection",
+    "subPropertyOf" : "dc:relation"
+  }, {
+    "@id" : "cld:catalogueOrIndex",
+    "@type" : "rdf:Property",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A catalogue for, or index of, the collection."
+    },
+    "domain" : "dcmitype:Collection",
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Catalogue or Index"
+    },
+    "range" : [ "cdtype:CatalogueOrIndex", "dcmitype:Collection" ],
+    "subPropertyOf" : "dc:description"
+  }, {
+    "@id" : "cld:dateItemsCreated",
+    "@type" : "rdf:Property",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A range of dates over which the individual items within the collection were created."
+    },
+    "domain" : "dcmitype:Collection",
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Date Items Created"
+    },
+    "subPropertyOf" : "dc:date"
+  }, {
+    "@id" : "cld:describedCollection",
+    "@type" : "rdf:Property",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A collection that is described by the current collection."
+    },
+    "domain" : [ "cdtype:CatalogueOrIndex", "dcmitype:Collection" ],
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Described Collection"
+    },
+    "range" : "dcmitype:Collection",
+    "subPropertyOf" : "dc:relation"
+  }, {
+    "@id" : "cld:isAccessedVia",
+    "@type" : "rdf:Property",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A service that provides access to the items within the collection."
+    },
+    "domain" : "dcmitype:Collection",
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Is Accessed Via"
+    },
+    "range" : "dcmitype:Service",
+    "subPropertyOf" : "dc:relation"
+  }, {
+    "@id" : "cld:isLocatedAt",
+    "@type" : "rdf:Property",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A location where the collection is held."
+    },
+    "domain" : "dcmitype:Collection",
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Is Located At"
+    },
+    "subPropertyOf" : "dc:relation"
+  }, {
+    "@id" : "cld:itemFormat",
+    "@type" : "rdf:Property",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The media type, physical or digital, of one or more items within the collection."
+    },
+    "domain" : "dcmitype:Collection",
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Item Format"
+    }
+  }, {
+    "@id" : "cld:itemType",
+    "@type" : "rdf:Property",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The nature or genre of the content of one or more items within the collection."
+    },
+    "domain" : "dcmitype:Collection",
+    "isDefinedBy" : "http://purl.org/cld/terms/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Item Type"
+    }
+  } ],
+  "@context" : {
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://purl.org/dc/terms/W3CDTF"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "dcam" : "http://purl.org/dc/dcam/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "freq" : "http://purl.org/cld/freq/",
+    "dcmitype" : "http://purl.org/dc/dcmitype/",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "cld" : "http://purl.org/cld/terms/",
+    "accpol" : "http://purl.org/cld/accpol/",
+    "cdtype" : "http://purl.org/cld/cdtype/",
+    "dc" : "http://purl.org/dc/elements/1.1/",
+    "accmeth" : "http://purl.org/cld/accmeth/"
+  }
+}

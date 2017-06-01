@@ -1,0 +1,8 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix : <http://example.com/>.
+
+
+
+:person1 a :Person.
+
+:person1 :name :iri.

@@ -1,0 +1,20 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix : <http://example.com/>.
+
+
+:a
+        a sh:Shape;
+        sh:targetClass :Person;
+        sh:property
+        [
+                sh:path :name;
+                sh:nodeKind sh:Literal;
+        ],
+        [
+                sh:path :knows;
+                sh:nodeKind sh:BlankNodeOrIRI;
+        ] ,
+        [
+                sh:path :someIri;
+                sh:nodeKind sh:IRI;
+        ] .

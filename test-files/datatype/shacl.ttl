@@ -1,0 +1,12 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix : <http://example.com/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+:a
+        a sh:Shape;
+        sh:targetClass :Person;
+        sh:property [
+                sh:path :age;
+                sh:datatype xsd:integer;
+        ].

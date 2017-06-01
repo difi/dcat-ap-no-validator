@@ -1,0 +1,6 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix : <http://example.com/>.
+
+
+[] a :Checksum;
+    :algorithm 1.2 .

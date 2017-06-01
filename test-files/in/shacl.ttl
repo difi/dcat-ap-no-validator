@@ -1,0 +1,13 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix : <http://example.com/>.
+
+
+[]
+                  a              sh:Shape ;
+                  sh:targetClass  :Checksum ;
+                  sh:property
+                  [
+                          sh:path :algorithm ;
+                          sh:in (:checksumAlgorithm_md5 :checksumAlgorithm_sha1 :checksumAlgorithm_sha256 "hello" 1 "hei"@no ) ;
+                          sh:severity   sh:Violation
+                  ] .

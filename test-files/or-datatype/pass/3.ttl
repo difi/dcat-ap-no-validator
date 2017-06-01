@@ -1,0 +1,10 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix : <http://example.com/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+
+
+:person1 :age "1"^^xsd:number .
+
+:person1 a :Person.

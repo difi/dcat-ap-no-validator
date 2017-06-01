@@ -1,0 +1,15 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix : <http://example.com/>.
+
+
+[] a :Checksum;
+    :algorithm :checksumAlgorithm_md5, :checksumAlgorithm_sha1.
+
+[] a :Checksum;
+    :algorithm :checksumAlgorithm_sha256.
+
+
+[] a :Checksum;
+    :algorithm :checksumAlgorithm_md5 , :checksumAlgorithm_sha1 , :checksumAlgorithm_sha256 , "hello" , 1 , "hei"@no .
+
+

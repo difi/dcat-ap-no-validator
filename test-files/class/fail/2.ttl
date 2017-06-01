@@ -1,0 +1,10 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix : <http://example.com/>.
+
+
+
+
+:person1 :knows :person2.
+
+:person1 a :Person.
+:person2 a :NotPerson.

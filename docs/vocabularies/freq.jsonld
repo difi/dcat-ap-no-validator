@@ -1,0 +1,379 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b9424b6ea-60bd-49ba-b460-013e979192750",
+    "label" : "Dublin Core Collection Description Task Group"
+  }, {
+    "@id" : "http://purl.org/cld/freq/",
+    "creator" : "_:b9424b6ea-60bd-49ba-b460-013e979192750",
+    "modified" : "2013-05-10",
+    "title" : {
+      "@language" : "en",
+      "@value" : "The Collection Description Frequency Namespace"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/annual",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs once a year."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Annual"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Annual"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/biennial",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs every two years."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Biennial"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Biennial"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/bimonthly",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs every two months."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Bimonthly"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Bimonthly"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/biweekly",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs every two weeks."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Biweekly"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Biweekly"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/continuous",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event repeats without interruption."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Continuous"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Continuous"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/daily",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs once a day."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Daily"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Daily"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/irregular",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs at uneven intervals."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Irregular"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Irregular"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/monthly",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs once a month."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Monthly"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Monthly"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/quarterly",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs every three months."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Quarterly"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Quarterly"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/semiannual",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs twice a year."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Semiannual"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Semiannual"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/semimonthly",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs twice a month."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Semimonthly"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Semimonthly"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/semiweekly",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs twice a week."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Semiweekly"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Semiweekly"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/threeTimesAMonth",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs three times a month."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Three times a month"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Three times a month"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/threeTimesAWeek",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs three times a week."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Three times a week"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Three times a week"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/threeTimesAYear",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs three times a year."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Three times a year"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Three times a year"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/triennial",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs every three years."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Triennial"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Triennial"
+    }
+  }, {
+    "@id" : "http://purl.org/cld/freq/weekly",
+    "@type" : "skos:Concept",
+    "memberOf" : "http://purl.org/cld/terms/Frequency",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The event occurs once a week."
+    },
+    "isDefinedBy" : "http://purl.org/cld/freq/",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Weekly"
+    },
+    "seeAlso" : "http://www.loc.gov/marc/holdings/echdcapt.html",
+    "inScheme" : "http://purl.org/cld/terms/Frequency",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Weekly"
+    }
+  } ],
+  "@context" : {
+    "memberOf" : {
+      "@id" : "http://purl.org/dc/dcam/memberOf",
+      "@type" : "@id"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://purl.org/dc/terms/W3CDTF"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "ns0" : "http://purl.org/dc/dcam/",
+    "dc" : "http://purl.org/dc/terms/"
+  }
+}

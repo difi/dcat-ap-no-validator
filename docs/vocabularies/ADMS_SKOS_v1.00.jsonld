@@ -1,0 +1,897 @@
+{
+  "@graph" : [ {
+    "@id" : "http://purl.org/adms",
+    "@type" : "owl:Ontology",
+    "attributionName" : {
+      "@language" : "en",
+      "@value" : "European Commission"
+    },
+    "attributionURL" : "http://ec.europa.eu/",
+    "abstract" : {
+      "@language" : "en",
+      "@value" : "This file specifies the controlled vocabularies defined by ADMS v1.0 as SKOS concept schemes and SKOS concepts.\n    "
+    },
+    "conformsTo" : "https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies",
+    "creator" : "http://stijngoedertier.org",
+    "description" : {
+      "@language" : "en",
+      "@value" : "This file specifies the controlled vocabularies defined by ADMS v1.0 as SKOS concept schemes and SKOS concepts.\n    "
+    },
+    "license" : "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11",
+    "modified" : "2012-04-13",
+    "rights" : {
+      "@language" : "en",
+      "@value" : "Copyright (c) 2012 European Union."
+    },
+    "preferredNamespacePrefix" : {
+      "@language" : "en",
+      "@value" : "admsv"
+    },
+    "preferredNamespaceUri" : {
+      "@language" : "en",
+      "@value" : "http://purl.org/adms/"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "This file specifies the controlled vocabularies defined by ADMS v1.0 as SKOS concept schemes and SKOS concepts."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Controlled vocabularies for the Asset Description Metadata Schema"
+    },
+    "versionInfo" : {
+      "@language" : "en",
+      "@value" : "Version 1.00 13 March 2012"
+    },
+    "describedby" : "https://joinup.ec.europa.eu/asset/adms/release/100",
+    "maker" : "http://stijngoedertier.org"
+  }, {
+    "@id" : "http://purl.org/adms/assettype/1.0",
+    "@type" : [ "owl:NamedIndividual", "skos:ConceptScheme" ],
+    "label" : {
+      "@language" : "en",
+      "@value" : "Asset Type"
+    },
+    "hasTopConcept" : [ "http://purl.org/adms/assettype/Taxonomy", "http://purl.org/adms/assettype/NameAuthorityList", "http://purl.org/adms/assettype/ServiceDescription", "http://purl.org/adms/assettype/DomainModel", "http://purl.org/adms/assettype/SyntaxEncodingScheme", "http://purl.org/adms/assettype/CoreComponent", "http://purl.org/adms/assettype/Thesaurus", "http://purl.org/adms/assettype/Schema", "http://purl.org/adms/assettype/CodeList", "http://purl.org/adms/assettype/Mapping", "http://purl.org/adms/assettype/Ontology", "http://purl.org/adms/assettype/InformationExchangePackageDescription" ]
+  }, {
+    "@id" : "http://purl.org/adms/assettype/CodeList",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Complete set of data element values of a coded simple data element  [ISO 9735-1:2002, 4.14]."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "CodeList",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Code List"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/CoreComponent",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A core component is a context-free semantic building block for creating clear and meaningful data models, vocabularies, and information exchange packages [UN/CEFACT CCTS ]."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "CoreComponent",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Core Component"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/DomainModel",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A domain model is a conceptual view of a system or an information exchange that identifies the entities involved and their relationships [NIEM Glossary ]."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "DomainModel",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Domain Model"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/InformationExchangePackageDescription",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A collection of artifacts that define and describe the structure and content of an information exchange  [NIEM Glossary]. An Information Exchange Package Description has a specific information exchange context and may refer to other semantic assets."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "InformationExchangePackageDescription",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Information Exchange Package Description"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/Mapping",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "relationship between a concept in one vocabulary and one or more concepts in another [ISO/DIS 25964-2]."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "Mapping",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Mapping"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/NameAuthorityList",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "controlled vocabulary for use in naming particular entities consistently [ISO/DIS 25964-2]."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "NameAuthorityList",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Name Authority List"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/Ontology",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A formal, explicit specification of a shared conceptualization [ISO/DIS 25964-2]."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "Ontology",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Ontology"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/Schema",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A schema is a concrete view on a system or information exchange, describing the structure, content, and semantics of data."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "Schema",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Schema"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/ServiceDescription",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A service description is a set of documents that describe the interface to and semantics of a service [W3C WS-GLOSS ]."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "ServiceDescription",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Service Description"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/SyntaxEncodingScheme",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Syntax Encoding Schemes indicate that the value is a string formatted in accordance with a formal notation, such as \"2000-01-01\" as the standard expression of a date. [DCMI Glossary]."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "SyntaxEncodingScheme",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Syntax Encoding Scheme"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/Taxonomy",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "scheme of categories and subcategories that can be used to sort and otherwise organize items of knowledge or information [ISO/DIS 25964-2]. "
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "Taxonomy",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Taxonomy"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/assettype/Thesaurus",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "definition" : {
+      "@language" : "en",
+      "@value" : "controlled and structured vocabulary in which concepts are represented by terms, organized so that relationships between concepts are made explicit, and preferred terms are accompanied by lead-in entries for synonyms or quasi-synonyms  [ISO 25964-1:2011]."
+    },
+    "inScheme" : "http://purl.org/adms/assettype/1.0",
+    "notation" : "Thesaurus",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Thesaurus"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/interoperabilitylevel/1.0",
+    "@type" : [ "skos:ConceptScheme", "owl:NamedIndividual" ],
+    "label" : {
+      "@language" : "en",
+      "@value" : "Interoperability Level"
+    },
+    "hasTopConcept" : [ "http://purl.org/adms/interoperabilitylevel/Technical", "http://purl.org/adms/interoperabilitylevel/Semantic", "http://purl.org/adms/interoperabilitylevel/Political", "http://purl.org/adms/interoperabilitylevel/Organisational", "http://purl.org/adms/interoperabilitylevel/Legal" ]
+  }, {
+    "@id" : "http://purl.org/adms/interoperabilitylevel/Legal",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/interoperabilitylevel/1.0",
+    "notation" : "Legal",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Legal"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/interoperabilitylevel/Organisational",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/interoperabilitylevel/1.0",
+    "notation" : "Organisational",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Organisational"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/interoperabilitylevel/Political",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/interoperabilitylevel/1.0",
+    "notation" : "Political",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Political"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/interoperabilitylevel/Semantic",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/interoperabilitylevel/1.0",
+    "notation" : "Semantic",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Semantic"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/interoperabilitylevel/Technical",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/interoperabilitylevel/1.0",
+    "notation" : "Technical",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Technical"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/1.0",
+    "@type" : [ "skos:ConceptScheme", "owl:NamedIndividual" ],
+    "label" : {
+      "@language" : "en",
+      "@value" : "Licence Type"
+    },
+    "hasTopConcept" : [ "http://purl.org/adms/licencetype/NonCommercialUseOnly", "http://purl.org/adms/licencetype/KnownPatentEncumbrance", "http://purl.org/adms/licencetype/NominalCost", "http://purl.org/adms/licencetype/JurisdictionWithinTheEU", "http://purl.org/adms/licencetype/PublicDomain", "http://purl.org/adms/licencetype/ReservedNames-Endorsement-OfficialStatus", "http://purl.org/adms/licencetype/ViralEffect-ShareAlike", "http://purl.org/adms/licencetype/GrantBack", "http://purl.org/adms/licencetype/OtherRestrictiveClauses", "http://purl.org/adms/licencetype/Attribution", "http://purl.org/adms/licencetype/RoyaltiesRequired", "http://purl.org/adms/licencetype/UnknownIPR", "http://purl.org/adms/licencetype/NoDerivativeWork" ]
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/Attribution",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "Attribution",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Attribution"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/GrantBack",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "GrantBack",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Grant back"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/JurisdictionWithinTheEU",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "JurisdictionWithinTheEU",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Jurisdiction within the EU"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/KnownPatentEncumbrance",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "KnownPatentEncumbrance",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Known patent encumbrance"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/NoDerivativeWork",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "NoDerivativeWork",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "No derivative work"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/NominalCost",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "NominalCost",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Nominal cost"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/NonCommercialUseOnly",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "NonCommercialUseOnly",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Non-commercial use only"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/OtherRestrictiveClauses",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "OtherRestrictiveClauses",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Other restrictive clauses"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/PublicDomain",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "PublicDomain",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Public domain"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/ReservedNames-Endorsement-OfficialStatus",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "ReservedNames-Endorsement-OfficialStatus",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Reserved names / endorsement / official status"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/RoyaltiesRequired",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "RoyaltiesRequired",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Royalties required"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/UnknownIPR",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "UnknownIPR",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Unknown IPR"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/licencetype/ViralEffect-ShareAlike",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/licencetype/1.0",
+    "notation" : "ViralEffect-ShareAlike",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Viral effect (a.k.a. Share-alike)"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/1.0",
+    "@type" : [ "skos:ConceptScheme", "owl:NamedIndividual" ],
+    "label" : {
+      "@language" : "en",
+      "@value" : "Publisher Type"
+    },
+    "hasTopConcept" : [ "http://purl.org/adms/publishertype/SupraNationalAuthority", "http://purl.org/adms/publishertype/StandardisationBody", "http://purl.org/adms/publishertype/Company", "http://purl.org/adms/publishertype/Academia-ScientificOrganisation", "http://purl.org/adms/publishertype/IndustryConsortium", "http://purl.org/adms/publishertype/PrivateIndividual(s)", "http://purl.org/adms/publishertype/RegionalAuthority", "http://purl.org/adms/publishertype/NonGovernmentalOrganisation", "http://purl.org/adms/publishertype/LocalAuthority", "http://purl.org/adms/publishertype/NonProfitOrganisation", "http://purl.org/adms/publishertype/NationalAuthority" ]
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/Academia-ScientificOrganisation",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "Academia-ScientificOrganisation",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Academia/Scientific organisation"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/Company",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "Company",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Company"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/IndustryConsortium",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "IndustryConsortium",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Industry consortium"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/LocalAuthority",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "LocalAuthority",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Local Authority"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/NationalAuthority",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "NationalAuthority",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "National authority"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/NonGovernmentalOrganisation",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "NonGovernmentalOrganisation",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Non-Governmental Organisation"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/NonProfitOrganisation",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "NonProfitOrganisation",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Non-Profit Organisation"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/PrivateIndividual(s)",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "PrivateIndividual(s)",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Private Individual(s)"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/RegionalAuthority",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "RegionalAuthority",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Regional authority"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/StandardisationBody",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "StandardisationBody",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Standardisation body"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/publishertype/SupraNationalAuthority",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/publishertype/1.0",
+    "notation" : "SupraNationalAuthority",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Supra-national authority"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/1.0",
+    "@type" : [ "owl:NamedIndividual", "skos:ConceptScheme" ],
+    "label" : {
+      "@language" : "en",
+      "@value" : "Representation Technique"
+    },
+    "hasTopConcept" : [ "http://purl.org/adms/representationtechnique/XMLSchema", "http://purl.org/adms/representationtechnique/OWL", "http://purl.org/adms/representationtechnique/KIF", "http://purl.org/adms/representationtechnique/SPARQL", "http://purl.org/adms/representationtechnique/SBVR", "http://purl.org/adms/representationtechnique/Prolog", "http://purl.org/adms/representationtechnique/Diagram", "http://purl.org/adms/representationtechnique/BPMN", "http://purl.org/adms/representationtechnique/Archimate", "http://purl.org/adms/representationtechnique/Schematron", "http://purl.org/adms/representationtechnique/WSDL", "http://purl.org/adms/representationtechnique/SPIN", "http://purl.org/adms/representationtechnique/DTD", "http://purl.org/adms/representationtechnique/RelaxNG", "http://purl.org/adms/representationtechnique/Datalog", "http://purl.org/adms/representationtechnique/WSMO", "http://purl.org/adms/representationtechnique/RDFSchema", "http://purl.org/adms/representationtechnique/HumanLanguage", "http://purl.org/adms/representationtechnique/TopicMaps", "http://purl.org/adms/representationtechnique/CommonLogic", "http://purl.org/adms/representationtechnique/RIF", "http://purl.org/adms/representationtechnique/UML", "http://purl.org/adms/representationtechnique/SWRL", "http://purl.org/adms/representationtechnique/Genericode", "http://purl.org/adms/representationtechnique/IDEF", "http://purl.org/adms/representationtechnique/RuleML", "http://purl.org/adms/representationtechnique/SKOS" ]
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/Archimate",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "Archimate",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Archimate"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/BPMN",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "BPMN",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Business Process Modeling Notation"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/CommonLogic",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "CommonLogic",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Common logic"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/DTD",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "DTD",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Document Type Definition"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/Datalog",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "Datalog",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Datalog"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/Diagram",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "Diagram",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Diagram"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/Genericode",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "Genericode",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "genericode"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/HumanLanguage",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "HumanLanguage",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Human Language"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/IDEF",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "IDEF",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Integration Definition"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/KIF",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "KIF",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Knowledge Interchange Format"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/OWL",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "OWL",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Web Ontology Language Full/DL/Lite"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/Prolog",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "Prolog",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Prolog"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/RDFSchema",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "RDFSchema",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Resource Description Framework Schema"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/RIF",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "RIF",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Rule Interchange Format"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/RelaxNG",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "RelaxNG",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Relax NG"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/RuleML",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "RuleML",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Rule Markup Langauge"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/SBVR",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "SBVR",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Semantics of Business Vocabulary and Rules"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/SKOS",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "SKOS",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Simple Knowledge Organization System"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/SPARQL",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "SPARQL",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "SPARQL Query Language for RDF"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/SPIN",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "SPIN",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "SPARQL Inference Notation"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/SWRL",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "SWRL",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Semantic Web Rule Language"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/Schematron",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "Schematron",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Schematron"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/TopicMaps",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "TopicMaps",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Topic Maps"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/UML",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "UML",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Unified Modelling Language"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/WSDL",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "WSDL",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Web Service Description Language"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/WSMO",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "WSMO",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Web Service Modelling Ontology"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/representationtechnique/XMLSchema",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/representationtechnique/1.0",
+    "notation" : "XMLSchema",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "XML Schema"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/status/1.0",
+    "@type" : [ "skos:ConceptScheme", "owl:NamedIndividual" ],
+    "label" : {
+      "@language" : "en",
+      "@value" : "Status"
+    },
+    "hasTopConcept" : [ "http://purl.org/adms/status/Withdrawn", "http://purl.org/adms/status/UnderDevelopment", "http://purl.org/adms/status/Deprecated", "http://purl.org/adms/status/Completed" ]
+  }, {
+    "@id" : "http://purl.org/adms/status/Completed",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/status/1.0",
+    "notation" : "Completed",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Completed"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/status/Deprecated",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/status/1.0",
+    "notation" : "Deprecated",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Deprecated"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/status/UnderDevelopment",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/status/1.0",
+    "notation" : "UnderDevelopment",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Under development"
+    }
+  }, {
+    "@id" : "http://purl.org/adms/status/Withdrawn",
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+    "inScheme" : "http://purl.org/adms/status/1.0",
+    "notation" : "Withdrawn",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Withdrawn"
+    }
+  }, {
+    "@id" : "skos:Concept",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "skos:ConceptScheme",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "skos:definition",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:hasTopConcept",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:inScheme",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:notation",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:prefLabel",
+    "@type" : "owl:AnnotationProperty"
+  } ],
+  "@context" : {
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "conformsTo" : {
+      "@id" : "http://purl.org/dc/terms/conformsTo",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "describedby" : {
+      "@id" : "http://www.w3.org/2007/05/powder-s#describedby",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "maker" : {
+      "@id" : "http://xmlns.com/foaf/0.1/maker",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "attributionURL" : {
+      "@id" : "http://creativecommons.org/ns#attributionURL",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "attributionName" : {
+      "@id" : "http://creativecommons.org/ns#attributionName"
+    },
+    "hasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type" : "@id"
+    },
+    "cc" : "http://creativecommons.org/ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "wdrs" : "http://www.w3.org/2007/05/powder-s#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "ns0" : "http://purl.org/vocab/vann/",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "dc" : "http://purl.org/dc/terms/"
+  }
+}
