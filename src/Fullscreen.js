@@ -75,10 +75,10 @@ class Fullscreen extends React.Component {
 
             let background = function () {
 
-                let basePath = window.location.host.indexOf("localhost") < 0 ? "dcat-ap-no-validator/" : ""
+                // let basePath = window.location.host.indexOf("localhost") < 0 ? "dcat-ap-no-validator/" : ""
 
                 let simpleFetch = function(url){
-                    return fetch(basePath+"vocabularies/"+url)
+                    return fetch(url)
                         .then(function (response) {
                             return response.json()
                         })
